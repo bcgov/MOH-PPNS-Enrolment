@@ -85,7 +85,7 @@ describe("Pay Practitioner-CSR", () => {
       .trigger("change");
 
     cy.get("select")
-      .find("option[data-cy=submissionCode0]")
+      .find("option[data-cy=submissionCode01]")
       .then(($el) => $el.get(0).setAttribute("selected", "selected"))
       .parent()
       .trigger("change");
@@ -113,7 +113,7 @@ describe("Pay Practitioner-CSR", () => {
       .trigger("change");
 
     cy.get("select")
-      .find("option[data-cy=hospitalClaimSubmissionCode0]")
+      .find("option[data-cy=hospitalClaimSubmissionCode01]")
       .then(($el) => $el.get(0).setAttribute("selected", "selected"))
       .parent()
       .trigger("change");
